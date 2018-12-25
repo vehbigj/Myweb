@@ -1,0 +1,281 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial sans-serif;
+    font-style: normal;
+    font-size-adjust: auto;
+    padding: auto;
+    margin: 0;
+    background-color: lightgrey;
+
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 0px;
+    text-align: center;
+    background: grey;
+}
+
+.header-tekst{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header h1 {
+    font-size: 50px;
+    color: white;
+}
+.header p{
+  color: white;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: lightgrey;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    margin-left: 15px;
+    margin-right: 15px;
+
+}
+
+/* Style the topnav links */
+.topnav a {
+    float: left;
+    display: inline-block;
+    color: green;
+    text-align: center;
+    text-decoration: none;
+    width: 33.33%;
+    padding: 10px;
+}
+
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: lightblue;
+    color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {
+    float: left;
+    width: 70%;
+    padding: 10px;
+    margin: auto;
+}
+
+/* Right column */
+.rightcolumn {
+    float: right;
+    width: 30%;
+    padding-top: 10px;
+    margin: auto;
+}
+
+.row {
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
+  max-width: auto;
+  margin: auto;
+}
+
+.main-view {
+  background-color: grey;
+  padding: 15px;
+  margin: 5px;
+}
+
+.main-view ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-decoration: none;
+  padding: 10px;
+  margin: auto;
+  list-style-image: url(image/icon.png);
+}
+ .fotot {
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   opacity: 0.9;
+   margin-top: 15px;
+   border: 0px solid black;
+
+      }
+
+ .fotot img{
+   border: 5px solid black;
+   margin: 5px;
+   padding: 0px;
+ }
+.photo-1{
+  margin: 5px;
+}
+.photo-4{
+  margin: 5px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ /*end of right and left column*/
+
+ /*topnav1 ne fund te row*/
+
+ .topnav1 {
+     overflow: hidden;
+     background-color: lightgrey;
+     border-bottom-left-radius: 20px;
+     border-bottom-right-radius: 20px;
+     margin-left: 15px;
+     margin-right: 15px;
+   }
+
+   .topnav1 a {
+       float: right;
+       display: inline-block;
+       color: #f2f2f2;
+       text-align: center;
+       text-decoration: none;
+       width: 33.3%;
+       padding: 10px;
+       color: green;
+   }
+
+
+.container-2{
+  background-color: grey;
+}
+
+ .container2 {
+   display: grid;
+   grid-template-columns: 1.5fr 1fr 1fr;
+   text-align: center;
+   background-color: grey;
+ }
+
+/* Form Style*/
+.form{
+width: 80%;
+padding: 10px;
+margin: 5px;
+text-align: left;
+}
+
+/* Style top-form and bottom-form*/
+.top-form,
+.bottom-form{
+   width: 80%;
+   margin-bottom: 20px;
+   overflow: hidden;
+
+}
+
+.form input[type="text"],
+  .form textarea {
+  padding: 10px 0px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 2px solid #fff;
+  border-radius: 2px;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+  .form input:focus,
+  .form textarea:focus {
+    border-color: #4ca1af;
+
+}
+
+.form .label{
+  margin-bottom: 5px;
+}
+
+/*floating top-form inner-form classes to the left*/
+.top-form .inner-form {
+  float: left;
+  margin-right: 10px;
+  width: 170px;
+  height: 60px;
+}
+.top-form .inner-form:last-child{
+  margin-right: 0;
+}
+
+.bottom-form textarea{
+  height: 120px;
+}
+/*clear all after bottom-form*/
+.bottom-form{
+  clear: both;
+}
+
+ .btn{
+  width: 200px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/*end of styling form*/
+
+/*Latest-news column style or column two in conatiner2*/
+.latest-news{
+  text-align: left;
+  margin-right: 20px;
+  padding-right: 20px;
+}
+.latest-news h2{
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; /*multiply shadow*/
+
+}
+
+.social-network {
+  text-align: left;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.social-network ul{
+  margin: 10px;
+  list-style-image: url(image/icon.png);
+  margin: 10px;
+  padding: auto;
+
+}
+.social-network h2{
+  text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+
+}
+/*end of container2*/
+
+
+
+/* Footer */
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+    .leftcolumn, .rightcolumn {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
