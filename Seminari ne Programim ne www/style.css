@@ -41,6 +41,7 @@ body {
     border-top-right-radius: 20px;
     margin-left: 15px;
     margin-right: 15px;
+    border-bottom: 1px solid;
 
 }
 
@@ -58,7 +59,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-    background-color: lightblue;
+    background-color: blue;
     color: black;
 }
 
@@ -81,7 +82,6 @@ body {
 
 .row {
   border-bottom: 1px solid black;
-  border-top: 1px solid black;
   max-width: auto;
   margin: auto;
 }
@@ -96,7 +96,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   text-decoration: none;
-  padding: 10px;
+  padding: 15px;
   margin: auto;
   list-style-image: url(image/icon.png);
 }
@@ -222,7 +222,19 @@ text-align: left;
  .btn{
   width: 200px;
   border-radius: 10px;
-  cursor: pointer;
+  display: inline-block;
+}
+
+.submit {
+    background-color: #3fb6b2;
+    padding: 12px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #ffffff;
+    border: none;
+    outline: none;
+    margin: 0;
+    font-weight: bold;
 }
 /*end of styling form*/
 
@@ -245,13 +257,15 @@ text-align: left;
 .social-network ul{
   margin: 10px;
   list-style-image: url(image/icon.png);
-  margin: 10px;
   padding: auto;
-
 }
+
 .social-network h2{
   text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+}
 
+.social-network li{
+  margin: 10px;
 }
 /*end of container2*/
 

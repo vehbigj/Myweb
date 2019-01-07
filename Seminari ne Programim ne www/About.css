@@ -56,7 +56,7 @@ body {
 
 /* Change color on hover */
 .topnav a:hover {
-    background-color: lightblue;
+    background-color: blue;
     color: black;
 }
 
@@ -85,7 +85,7 @@ h1 span {
 
 
 .quote {
-    font-size: 12pt;
+    font-size: 15px;
     text-align: right;
     margin-top: 10px;
 }
@@ -140,7 +140,7 @@ progress {
   width: 500px;
 }
 
-progress::-webkit-progress-bar {
+/*progress::-webkit-progress-bar {
     background: #efefef;
 }
 progress::-webkit-progress-value {
@@ -149,7 +149,7 @@ progress::-webkit-progress-value {
 progress::-moz-progress-bar {
     color: #3fb6b2;
     background: #efefef;*/
-}
+ }
 .section iframe, audio {
     display: block;
     margin: 20px;
@@ -163,22 +163,9 @@ hr {
 }
 form {
     text-align: center;
-    margin-top: 0;
+    margin-top: 10;
 }
-.submit {
-    background-color: #3fb6b2;
-    padding: 12px 45px;
-    border-radius: 5px;
-    cursor: pointer;
-    color: #ffffff;
-    border: none;
-    outline: none;
-    margin: 0;
-    font-weight: bold;
-}
-.submit:hover {
-    background-color: #43a09d;
-}
+
 textarea {
     height: 100px;
 }
@@ -208,9 +195,8 @@ input, textarea {
 #contacts {
     text-align: center;
 }
-.copyright {
-    font-size: 8pt;
-    text-align: right;
-    padding-bottom: 10px;
-    color: grey;
+.footer {
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
